@@ -1,0 +1,85 @@
+
+#intro,
+.header-bottom{
+
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://preview.redd.it/xf6m7rjtkke51.png?width=960&crop=smart&auto=webp&s=2d0990263d3bccf233557c515eb3e59a7d10b98e");
+  background-size: cover;
+  
+}
+.header-bottom::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #intro {
+    margin-top: -58.59px;
+  }
+  #intro,
+  .header-bottom
+   {
+    height: 50vh;
+  }
+}
+
+
+
+.btn-rosa,
+.btn-rosa:hover,
+.btn-rosa:active,
+.btn-rosa:visited,
+.btn-rosa:focus {
+    position: relative;
+    color: #fff;
+    background-color: #d2249b;
+    border-color: #b40170;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(1em + 1vw);
+    font-weight: bolder;
+    
+
+}
+
+div.card {
+  display: flex;
+	width: 10rem;
+  height: 15rem;
+	margin: 0 auto;
+}
+
+#id_respuesta {
+	margin: 1%;
+}
+
+.text-center{
+  text-align: center!important;
+  background-color: rgba(253, 251, 251, 0.684);
+  text-size-adjust: 80%;
+  text-emphasis-color: current;
+  font-size: x-large
+  
+
+
+
+}
+
+
+
