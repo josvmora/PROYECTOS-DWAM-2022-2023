@@ -23,16 +23,19 @@ router.get('/costumers',async function(req, res, next) {
 });
 
 router.get('/customers/order',async function(req, res, next) {
- // const URL = ''
+  const URL = 'https://sales-62fb7-default-rtdb.firebaseio.com/orders.json'
  // const config = {
  //   proxy: {
  //     host: 'localhost',
   //    port: 4444
  //   }
  // }
- // const response = await axios.get(URL, config)
- res.render('clientes_order', { title: 'orders' });
+  const response = await axios.get(URL)
+  
+
+ res.render('clientes_order', { title: 'orders' , orders: response.data});
 });
+
 
 
 module.exports = router;
