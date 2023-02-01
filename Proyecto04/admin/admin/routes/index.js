@@ -22,8 +22,16 @@ router.get('/costumers',async function(req, res, next) {
   res.render('clientes', { title: 'Clientes', clientes: response.data });
 });
 
-router.get('/customers/order', function(req, res, next) {
-  res.render('clientes_order', { title: 'Express' });
+router.get('/customers/order',async function(req, res, next) {
+ // const URL = ''
+ // const config = {
+ //   proxy: {
+ //     host: 'localhost',
+  //    port: 4444
+ //   }
+ // }
+ // const response = await axios.get(URL, config)
+ res.render('clientes_order', { title: 'orders' });
 });
 
 
