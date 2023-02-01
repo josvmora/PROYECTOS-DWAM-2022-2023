@@ -22,5 +22,9 @@ router.get('/costumers',async function(req, res, next) {
   res.render('clientes', { title: 'Clientes', clientes: response.data });
 });
 
+router.get('/customers/order', function(req, res, next) {
+  res.render('clientes_order', { title: 'Express' });
+});
+
 
 module.exports = router;
